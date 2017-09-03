@@ -1,0 +1,657 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url(./font/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(./font/Lato2OFLWeb/Lato/fonts/Lato-Light.woff);
+}
+
+@font-face {
+    font-family: Lato-Thin;
+    src: url(./font/Lato2OFLWeb/Lato/fonts/Lato-Thin.woff);
+}
+
+
+@font-face {
+    font-family: Lato-MediumItalic;
+    src: url(./font/Lato2OFLWeb/Lato/fonts/Lato-MediumItalic.woff);
+}
+
+body {
+    background: url("../img/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: auto;
+    color: #fff;
+    font-family: Lato-Regular, "Times New Roman", Roboto, serif;
+}
+
+a {
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #a76767;
+}
+
+p {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    text-align: justify;
+}
+
+li {
+    transition: all .3s ease-in-out;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+.barre {
+    background: url("../img/menu/barre.png");
+    width: 100%;
+    height: 3px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+
+
+/*
+ *  STYLE 1
+ */
+
+.custom-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /*border-radius: 10px;*/
+    background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    /* border-radius: 10px;*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #9b8486;
+}
+
+.avatar {
+    border: 1px solid #fff;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    background-image: url(../img/avatar.png);
+    background-size: cover;
+    /*img {
+      height: 100%;
+  }*/
+}
+
+
+
+/* SOCIALS MEDIA */
+
+ul.social {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul.social li {
+    width: 30px;
+    margin-right: 3px;
+}
+
+ul.social li:last-child {
+    margin-right: 0;
+}
+
+ul.social li a {
+    font-size: 24px;
+}
+
+ul.social li a.dark {
+    color: #461d1d;
+}
+
+ul.social li a.dark:hover {
+    color: #a76767;
+}
+
+
+
+/* BUTTONS ACTIONS */
+
+ul.hire-btns {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul.hire-btns li {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 22vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+
+ul.hire-btns li:last-child {
+    margin-right: 0;
+}
+
+ul.hire-btns li:hover {
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+ul.hire-btns li:hover .btn-action {
+    text-decoration: none;
+    color: #302a2c;
+}
+
+ul.hire-btns .btn-action {
+    text-transform: uppercase;
+}
+
+ul.hire-btns a {
+    font-size: 16px;
+}
+
+ul.hire-btns li.dark {
+    border-color: #353535;
+}
+
+ul.hire-btns li.dark a {
+    color: #353535;
+}
+
+ul.hire-btns li.dark:hover {
+    border: 1px solid #fff;
+    background: #353535;
+}
+
+ul.hire-btns li.dark:hover .btn-action {
+    color: #fff;
+}
+
+ul.hire-btns li.orange {
+    border-color: #a76767;
+    background-color: #a76767;
+}
+
+ul.hire-btns li.orange .btn-action {
+    color: #fff;
+}
+
+ul.hire-btns li.orange:hover {
+    border: 1px solid #fff;
+    background: #353535;
+}
+
+ul.hire-btns li.orange:hover .btn-action {
+    color: #fff;
+}
+
+
+
+/*===============================================      HOME Page     ===================================================*/
+
+.home-container {
+    margin: 7vh auto;
+    text-align: center;
+}
+
+.home-container .avatar {
+    width: 42vh;
+    height: 42vh;
+}
+
+.home-container h1 {
+    font-family: Lato-Thin;
+    font-size: 46px;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+.home-container p {
+    margin: 0;
+    text-align: center;
+}
+
+.home-container ul.hire-btns {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+
+
+/*===============================================      ABOUT Page     ===================================================*/
+
+.about-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 90vh;
+    margin: 5vh;
+    padding: 24px;
+    color: #353535;
+    /*.headerDivider {
+      border-left: 1px solid $color-black-light;
+      height: 30vh;
+      margin: 0 50%;
+  }*/
+}
+
+.about-container .part-1 {
+    height: 30vh;
+    overflow: hidden;
+}
+
+.about-container .part-2 {
+    height: 46vh;
+    overflow: hidden;
+}
+
+.about-container .part-3 {
+    height: 14vh;
+    overflow: hidden;
+}
+
+.about-container .avatar {
+    width: 19vh;
+    height: 19vh;
+    box-shadow: inset 0 0 0 3px #353535, inset 0 0 0 6px white, 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container .top {
+    color: #461d1d;
+    padding-right: 36px;
+    padding-left: 36px;
+}
+
+.about-container .top:first-child {
+    border-right: 1px solid #461d1d;
+}
+
+.about-container .top ul.infos {
+    display: inline-block;
+    margin: 16px auto 6px auto;
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+}
+
+.about-container .top ul.infos li {
+    margin-bottom: 10px;
+}
+
+.about-container .top h2,
+.about-container .top h3 {
+    font-family: Lato-light;
+    text-align: center;
+}
+
+.about-container .top h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.about-container .top h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.about-container .top p {
+    font-family: Lato-MediumItalic;
+    font-size: 14px;
+    text-align: center;
+}
+
+.about-container .head {
+    margin-top: 6px;
+}
+
+.about-container .head h1 {
+    font-variant: small-caps;
+    margin-bottom: 3px;
+    font-size: 38px;
+}
+
+.about-container .head p {
+    font-family: Lato-Light;
+    font-size: 16px;
+}
+
+.about-container .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 36vh;
+    overflow: auto;
+}
+
+
+
+/*@media screen and (max-width: 1024px) {
+    .about-container {
+        .content {
+            max-height: 200px;
+        }
+    }
+}
+*/
+
+
+/*===============================================      ABOUT Page     ===================================================*/
+
+.testimonials-container {
+    background: rgba(255, 255, 255, 0.8) url("../img/testi.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 90vh;
+    margin: 5vh;
+    padding: 24px;
+    color: #353535;
+}
+
+.testimonials-container .head {
+    margin-top: 6px;
+}
+
+.testimonials-container .head h1 {
+    font-variant: small-caps;
+    margin-bottom: 3px;
+    font-size: 38px;
+}
+
+.testimonials-container .head p {
+    font-family: Lato-Light;
+    font-size: 16px;
+}
+
+.testimonials-container .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: auto;
+    height: 70vh;
+    /*.niw {*/
+    /*  }*/
+}
+
+.testimonials-container .content article {
+    height: 26vh;
+}
+
+.testimonials-container .content article img {
+    width: 100%;
+    /*width: 50%;
+        position: absolute;
+        top: 12%;
+        left: 74%;*/
+    overflow: hidden;
+    box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+}
+
+.testimonials-container .content article .block {
+    border-right: 2px solid #461d1d;
+    height: 100%;
+}
+
+.testimonials-container .content article .block .infos {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-align: right;
+}
+
+.testimonials-container .content article .block .infos h4 {
+    font-family: Lato-Light;
+    font-size: 20px;
+}
+
+.testimonials-container .content p {
+    font-size: 18px;
+    /*line-height: 33px;*/
+    margin-left: 88px;
+}
+
+
+
+/*===============================================      CONTACT Page     ===================================================*/
+
+.contact-container {
+    height: 90vh;
+    margin: 5vh 7vh;
+    /*.headerDivider {
+      border-left: 1px solid $color-white;
+      height: 140px;
+      margin: 0 50%;
+  }*/
+}
+
+.contact-container .avatar {
+    width: 19vh;
+    height: 19vh;
+    box-shadow: inset 0 0 0 3px #353535, inset 0 0 0 6px white, 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container p {
+    font-family: Lato-MediumItalic;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.contact-container .first-side {
+    text-align: right;
+    border-right: 1px solid #fff;
+}
+
+.contact-container .first-side h2,
+.contact-container .first-side h3 {
+    font-family: Lato-light;
+}
+
+.contact-container .first-side h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.contact-container .first-side h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.contact-container .first-side p {
+    text-align: right;
+}
+
+.contact-container .second-side ul.infos {
+    display: inline-block;
+    margin: 16px auto 6px auto;
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+}
+
+.contact-container .second-side ul.infos li {
+    margin-bottom: 10px;
+}
+
+.contact-container ul.hire-btns li {
+    float: right;
+    width: 73%;
+}
+
+.contact-container .head {
+    margin-top: 6px;
+}
+
+.contact-container .head h1 {
+    font-variant: small-caps;
+    margin-bottom: 3px;
+    font-size: 38px;
+}
+
+.contact-container .head p {
+    font-family: Lato-Light;
+    font-size: 16px;
+}
+
+.contact-container .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form input {
+    height: 40px;
+    font-size: 18px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    font-size: 18px;
+    resize: none;
+}
+
+.btn-tpl {
+    float: right;
+    width: 260px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0;
+    background: #a76767;
+    text-transform: uppercase;
+}
+
+.btn-tpl:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    text-decoration: none;
+    color: #302a2c;
+}
+
+#wrapper {
+    padding-left: 140px;
+    transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+    margin-left: -140px;
+    top: 51px;
+    left: 140px;
+    width: 140px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+    padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+    left: 0;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+/* MENU */
+
+#menu-toggle {
+    margin: 10px;
+    font-size: 36px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 20vh;
+    width: 140px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    width: 90%;
+    line-height: 40px;
+    text-align: right;
+    background-color: #131313;
+    margin-bottom: 2px;
+}
+
+.sidebar-nav li a {
+    padding: 0px 14px 0px 0px;
+    font-family: Lato-Thin;
+    font-size: 20px;
+}
+
+.sidebar-nav li:hover,
+.sidebar-nav li.active {
+    width: 100%;
+}
+
+.sidebar-nav li:hover a,
+.sidebar-nav li.active a {
+    font-family: Lato-Light;
+}
+
+@media (max-width: 767px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        left: 0;
+    }
+
+    #wrapper.active {
+        position: relative;
+        left: 140px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+        left: 140px;
+        width: 140px;
+        transition: all 0.4s ease 0s;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+    }
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
